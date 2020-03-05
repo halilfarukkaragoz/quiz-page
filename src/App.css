@@ -1,0 +1,18 @@
+.header { 
+
+    font-size: 85px;
+    color: blue;
+}
+.background-green {
+    background-color: green;
+  }
+  
+  .background-white {
+    background-color: white;
+  }
+  .background-red {
+    background-color:red;
+  }
+  body {
+    background-color: lightblue;
+  }
