@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 class Header extends Component {
     
 displayFirstQuestion = e => {
-if (this.props.questions[0] = Object){
+
   this.props.displayQuiz()
-}
+
 
 }
 

@@ -9,15 +9,18 @@ class Question extends Component {
     const { displayQuestion,setScore, score,questions,numberOfQuestions,changingQuestion,displayScorebox,answers }= this.props
     const { value } = e.target;
   
-     changingQuestion(numberOfQuestions+1)
      console.log(numberOfQuestions)
+     console.log(questions[numberOfQuestions].correct_answer)
    
    
-    if (value == questions[numberOfQuestions].correct_answer){
-      setScore(score+1)
-    }
-  if(numberOfQuestions>7){
-    displayScorebox()
+  if(numberOfQuestions<9){
+    
+    changingQuestion(numberOfQuestions+1)
+  }
+  else displayScorebox()
+  
+  if (value == questions[numberOfQuestions].correct_answer){
+    setScore(score+1)
   }
   }
    
